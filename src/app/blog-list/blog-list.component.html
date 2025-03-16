@@ -1,0 +1,9 @@
+
+<div class="loader"   *ngIf="loading; else listdiv"></div> 
+<ng-template #listdiv>
+    <div class="row col-md-12">
+            <div *ngFor="let blog of blogs" class="col-md-4">
+                <app-blog-item  [blog]="blog"></app-blog-item>
+            </div>
+    </div>
+</ng-template>

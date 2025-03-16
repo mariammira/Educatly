@@ -1,0 +1,20 @@
+
+<div class="card blog-card">
+    <div class="card-body">
+        <ul >
+            <img [src]="blog.cover_image" alt="cover_image" height="100"/>
+            <li >{{blog.description}}</li>
+            <li >{{blog.title}}</li>
+            <div>
+            <div class="user-logo">
+                <a class="user-img" [style.background-image]="'url(' + blog.user.profile_image_90 + ')'" ></a>
+                {{blog.user.name}}
+            </div> 
+            <div>{{blog.created_at| date}}</div>
+           
+        </div>
+
+        </ul>
+    </div>
+
+</div>
